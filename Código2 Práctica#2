@@ -1,0 +1,13 @@
+#define LedVerde 4
+#define tiempo_espera 500
+
+void setup() {
+  pinMode(LedVerde, OUTPUT); /*Pin 4 como salida*/
+  digitalWrite(LedVerde, LOW); /*Led conectado al pin13 inicia apagado*/
+}
+void loop() {
+    digitalWrite(LedVerde, HIGH); /*Enciende el led conectado al pin4*/
+    delay(tiempo_espera); /*Espera de 500 milisegundos*/
+    digitalWrite(LedVerde, LOW); /*Apago el led conectado al pin4*/
+    delay(tiempo_espera); /*Espera de 500 milisegundos*/
+}
